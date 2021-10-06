@@ -1,0 +1,92 @@
+body {
+    background: rgb(190, 195, 255);
+}
+
+.title {
+    font-size: 100px;
+    font-weight: 500;
+    border: 2px solid rgb(160, 93, 30);
+    color: rgb(255, 229, 205);
+}
+.title:hover {
+    color: rgb(133, 118, 36);
+}
+.name {
+    font-size: 50px;
+    font-weight: 500;
+    border: 2px solid rgb(15, 9, 65);
+    color: rgb(114, 128, 207);
+}
+.name:hover {
+    color: rgb(54, 30, 117);
+}
+.preview {
+    margin: auto;
+    margin-top:0px;
+    margin-bottom:calc((120vw - 120px) / 2) ;
+    background: aqua;
+    width: calc((200vw - 200px) / 2) ;
+    height: auto ;
+    border: 10px solid gray;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+.picfra {
+    margin: 30px auto;
+    background: rgb(37, 88, 88);
+    width: calc((50vw - 50px) / 2)  ;
+    height: calc((50vw - 50px) / 2)  ;
+    border: 8px solid rgb(110, 45, 45);
+    border-style:solid;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.5s ;
+}
+.pic {
+    margin: 30px ;
+    background: rgb(37, 88, 88);
+    width: 90% ;
+    border: 5px solid rgb(240, 154, 154);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ;
+}
+.pic:hover {
+    background: gold;
+    outline: 10px rgb(144, 255, 168) solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.pic1:focus{
+    top:150%;
+    left: calc((45vw - 45px)/2);
+    width: 200%;
+    position: absolute;
+}
+.pic2:focus{
+    top:150%;
+    left: calc((-5vw + 5px) / 2);
+    width: 200%;
+    position: absolute;
+}
+.pic3:focus{
+    top:150%;
+    left: calc((-55vw + 55px) / 2);
+    width: 200%;
+    position: absolute;
+}
+.pic4:focus{
+    top:150%;
+    left: calc((-105vw + 105px) / 2);
+    width: 200%;
+    position: absolute;
+}
