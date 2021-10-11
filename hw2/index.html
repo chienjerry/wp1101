@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Photo Album</title>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="styles.css"
+  />
+</head>
+<body>
+  
+
+  <div class="title">Welcome to My Digital Photo Album </div>
+  <div class="title lititle" >相簿選擇:點選相簿中預覽圖以顯示圖片</div>
+  <div class="albumlist">
+    <div class="title lititle albumname" id="album1" onclick="choosethealbum(1)">相簿1</div>
+    <div class="title lititle albumname" id="album2" onclick="choosethealbum(2)">相簿2</div>
+    <div class="title lititle albumname" id="album3" onclick="choosethealbum(3)">相簿3</div>
+  </div>
+
+
+  <div id="album1big">
+    <p class="title lititle" >相簿1</p>
+    <div class="preview">
+        <button class="picfra" id="picfra1" onclick="showpic(1)">
+        <img src=pi1.jpg class="pic pic1" id="picture1"  tabindex="0" >
+        </button>
+        <button class="picfra" id="picfra2" onclick="showpic(2)">
+        <img src=pi2.jpg class="pic pic2" id="picture2" tabindex="0" >
+        </button>
+        <button class="picfra" id="picfra3" onclick="showpic(3)">
+        <img src=pi3.jpg class="pic pic3" id="picture3" tabindex="0">
+        </button>
+        <button class="picfra" id="picfra4" onclick="showpic(4)">
+        <img src=pi4.jpg class="pic pic4" id="picture4" tabindex="0">
+        </button>
+    </div>
+  </div>
+  <div id="album2big">
+    <p class="title lititle">相簿2</p>
+    <div class="preview">
+        <button class="picfra" id="picfra5" onclick="showpic(5)">
+        <img src=pi5.jpg class="pic pic1" id="picture5" tabindex="0">
+        </button>
+        <button class="picfra" id="picfra6" onclick="showpic(6)">
+        <img src=pi6.jpg class="pic pic2" id="picture6" tabindex="0">
+        </button>
+        <button class="picfra" id="picfra7" onclick="showpic(7)">
+        <img src=pi7.jpg class="pic pic3" id="picture7" tabindex="0">
+        </button>
+        <button class="picfra" id="picfra8" onclick="showpic(8)">
+        <img src=pi8.jpg class="pic pic4" id="picture8" tabindex="0">
+        </button>
+    </div>
+  </div>
+
+  <div class="title lititle" id="show">您目前瀏覽的是第1個相簿中的第1張相片</div>
+  
+  <div class="title lititle">created by b08901111,thank you for visiting my web page</div>
+  <div class="title lititle">web proggraming hw2</div>
+  <script src="main.js"></script>
+
+</body>
+</html>
