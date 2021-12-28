@@ -32,6 +32,7 @@ type Mutation {
   updateTask(id: ID!, status: Status!): Task
   # Delete a task
   # TODO 5.1 Add the deleteTask function
+  deleteTask(id: ID!): ID!
 }
 
 # Input for creating a task
