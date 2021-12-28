@@ -80,6 +80,7 @@ export default function Dashboard() {
     // TODO 6.5 subscription logic
   }, [subscribeToMore]);
 
+  
   // graphql mutation function
   const [updateTask] = useMutation(UPDATE_TASK_MUTATION);
   /**

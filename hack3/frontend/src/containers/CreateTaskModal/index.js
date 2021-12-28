@@ -65,6 +65,7 @@ export default function CreateTaskModal({ open, handleCloseCreateTaskModal }) {
      });
   };
 
+  
   const handleClose = () => {
     // reset data
     setFormData(initialFormData);

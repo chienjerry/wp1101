@@ -13,7 +13,7 @@ import { GET_TASKS_QUERY, DELETE_TASK_MUTATION } from "../../graphql";
 
 export default function Task({ id, title, content, dueDate }) {
   const [deleteTask] = useMutation(DELETE_TASK_MUTATION);
-  
+
   const handleDelete = () => {
     deleteTask({
       variables: {

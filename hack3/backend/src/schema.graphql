@@ -8,6 +8,7 @@ enum Status {
   DONE
 }
 
+
 # A task will have an id, title, content, dueDate and status
 type Task {
   id: ID!
