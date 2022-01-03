@@ -1,0 +1,16 @@
+{
+  "name": "hw8",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd frontend && yarn start",
+    "server": "cd backend && yarn server"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "antd": "^4.17.2",
+    "dotenv-defaults": "^3.0.0",
+    "mongoose": "^6.1.3"
+  }
+}

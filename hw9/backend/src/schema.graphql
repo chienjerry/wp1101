@@ -1,0 +1,35 @@
+type Query {
+  messages(chatRoom: ChatRoomInput!, count: Int!): [Message!]
+}
+type Mutation {
+  createMessage(
+    chatRoom: ChatRoomInput!
+    message: MessageInput!
+  ): CreateMessagePayload!
+  clearMessages(chatRoom: ChatRoomInput!): ChatRoom!
+}
+type Subscription {
+  createMessage(chatRoom: ChatRoomInput!): CreateMessagePayload!
+  clearMessages(chatRoom: ChatRoomInput!): ChatRoom!
+}
+type ChatRoom {
+  name1: String!
+  name2: String!
+}
+type Message {
+  name: String!
+  body: String!
+}
+type CreateMessagePayload {
+  chatRoom: ChatRoom!
+  message: Message!
+}
+input ChatRoomInput {
+  name1: String!
+  name2: String!
+}
+input MessageInput {
+  name: String!
+  body: String!
+}
+
